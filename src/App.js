@@ -31,7 +31,7 @@ function App() {
           <ul className="list-group">
             {
               tasks.map((task) => (
-                <li className="list-group-item" >
+                <li className="list-group-item" key={task.id}>
                   <span className="lead">{task.name}</span>
                   <button className="btn-danger btn-sm float-right mx-2">Eliminar</button>
                   <button className="btn-warning btn-sm float-right">Editar</button>
